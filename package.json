@@ -2,7 +2,7 @@
   "name": "pump",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ke4roh.github.io/pump"
+  "homepage": "https://ke4roh.github.io/pump",
   "dependencies": {
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
