@@ -83,6 +83,11 @@ const CharacterGenerator: React.FC = () => {
     if (currentNode && currentNode.children) {
       currentNode = pickNode(currentNode.children, roomNumber);
     }
+    // empty room odds
+    let emptyOdds =  Math.random();
+    if (roomNumber < 2 || (roomNumber <31 && emptyOdds < .7) || (roomNumber <76 && emptyOdds < .4) || (roomNumber < 101 && emptyOdds < .2)) {
+	    currentNode = undefined;
+    }
     setGeneratedCharacter(currentNode ? currentNode.name : 'No character found');
   };
 
